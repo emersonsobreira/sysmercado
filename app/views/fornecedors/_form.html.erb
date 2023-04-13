@@ -15,26 +15,26 @@
   <% end %>
 
   <div class="row">
-       <div class="col-lg-4 form-group">   
+       <div class="col-lg-6 form-group">   
            <%= form.label :nome, :class => 'control-label required' %>
            <%= form.text_field :nome, :class => 'form-control' %>
        </div>
-        <div class="col-lg-5 form-group">   
-           <%= form.label :telefone, :class => 'control-label' %>
+        <div class="col-lg-3 form-group">   
+           <%= form.label :telefone, :class => 'control-label required' %>
            <%= form.text_field :telefone,  :class => 'form-control', :onkeypress=>"mask(this, mphone);", :onblur=>"mask(this, mphone);" %>
        </div>
             <div class="col-lg-3 form-group">   
            <%= form.label :cnpj_cpf, :class => 'control-label required' %>
            <%= form.text_field :cnpj_cpf, :class => 'form-control' %>
            </div>
-       </div>
+    
     </div>
  <div class="row">
-       <div class="col-lg-4 form-group">   
-           <%= form.label :logradouro, :class => 'control-label required' %>
+       <div class="col-lg-5 form-group">   
+           <%= form.label :logradouro, :class => 'control-label' %>
            <%= form.text_field :logradouro, :class => 'form-control' %>
        </div>
-        <div class="col-lg-5 form-group">   
+        <div class="col-lg-2 form-group">   
            <%= form.label :numero, :class => 'control-label' %>
            <%= form.text_field :numero,  :class => 'form-control' %>       
        </div>
@@ -49,11 +49,11 @@
            <%= form.label :bairro, :class => 'control-label' %>
            <%= form.text_field :bairro, :class => 'form-control' %>
        </div>
-        <div class="col-lg-5 form-group">   
+        <div class="col-lg-4 form-group">   
            <%= form.label :cidade, :class => 'control-label' %>
            <%= form.text_field :cidade,  :class => 'form-control' %>
        </div>
-        <div class="col-lg-3 form-group">   
+        <div class="col-lg-2 form-group">   
            <%= form.label :estado, :class => 'control-label' %>
            <%= form.text_field :estado, :class => 'form-control' %>
       </div>
